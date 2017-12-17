@@ -26,8 +26,23 @@ This is a (hopefully) evolving collection of CSS tidbits, explained briefly in w
 
 ---
 
-### Defining sizes in EMs / REMs / PXs 
+### 1. Defining sizes in EMs / REMs / PXs
+##### (also: vh, vw, ex, ch...)
+You can use a number of units of measurment to specify a size for anything in CSS (margins, paddings, widths, heights, you get the picture...)
 
+Let's get this out of the way first: the notion of `DP` or `DDP` (and many more acronyms), or `Device Pixel` refers units of measurment which make sure that your designs look the same on different resolution/aspect ratio/pixel density screens - basically it means that the browser knows how many actual pixels on screen (`display pixels`) a `DP` corresponds to, and rendes everything by multiplying the DP value with the ratio of pixels per DP. So, if you use such `device independent` units, your lengths will remain proportional regardless of the actual device they're rendered on.
+
+In CSS, we can use `px`, which is a `CSS pixel`, and it is always **1/96 physical inches** (the same as `user unit` in SVG). Of course, this means that depending on the screen and how many `device pixels` are on the screen, there will be a ration between one `device pixel` and one `px`.
+
+**All CSS units of lenght translate down to `px`, so other units are definable as (X * 1px)**
+
+`em` and `rem` are both such units, and by default they both translate to `16px`s. They both are relative values to a given font size, but different ones:
+
+| Unit |       Equivalent in px      | 
+|:----:|:---------------------------:|
+|  px  |              1              |
+|  em  |    `element font size` px   |
+|  rem | `root element font size` px |
 
 
 
