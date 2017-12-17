@@ -4,10 +4,9 @@ This is a (hopefully) evolving collection of CSS tidbits, explained briefly in w
 ---
 
 ## Target audience:
-
-* Newcomers to CSS, who enjoy fiddling with code snippets
-* Veterans of CSS, who are looking for concise explanations/examples to send to junior colleagues (and who might find what's wrong with my examples and correct them)
 * Developers who have no particular interest in CSS, but it was thrust upon them to produce front end code by on form or another of evil managment
+* Newcomers to CSS, who enjoy fiddling with code snippets
+* Veterans of CSS, who are looking for concise explanations/examples to send to others (and who might find what's wrong with my examples and correct them)
 * More...
 
 ---
