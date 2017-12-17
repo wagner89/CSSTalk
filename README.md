@@ -44,5 +44,9 @@ In CSS, we can use `px`, which is a `CSS pixel`, and it is always **1/96 physica
 |  em  |    `element font size` px   |
 |  rem | `root element font size` px |
 
+This means that `em`s will scale according to local font size (which might be inherited), while `rem`s onl;y care about the font-size of the `html` or root element.
+
+Check out the following example: https://jsfiddle.net/wagner89/ejqj23g1/4/
+Play around changing the font-size for the `html` and the differnet `div`s. You can see that using `em` and `rem` give you control over how to scale in different environments. 
 
 
