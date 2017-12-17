@@ -12,7 +12,7 @@ This is a (hopefully) evolving collection of CSS tidbits, explained briefly in w
 ---
 
 ## Topics 
-####(feel free to branch this repo and create PRs if you want to add a topic)
+#### (feel free to branch this repo and create PRs if you want to add a topic)
 1. Defining sizes in EMs / REMs / PXs 
 2. Stacking contexts and Z-indexes
 3. Confusing hidden overflow with bad Z-index
