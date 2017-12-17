@@ -13,7 +13,7 @@ This is a (hopefully) evolving collection of CSS tidbits, explained briefly in w
 
 ## Topics 
 #### (feel free to branch this repo and create PRs if you want to add a topic)
-1. Defining sizes in EMs / REMs / PXs 
+1. [Defining sizes in EMs / REMs / PXs](https://github.com/wagner89/CSSTalk/edit/master/README.md#) 
 2. Stacking contexts and Z-indexes
 3. Confusing hidden overflow with bad Z-index
 4. Defininf colors, constants, opacity
@@ -26,6 +26,7 @@ This is a (hopefully) evolving collection of CSS tidbits, explained briefly in w
 
 ---
 
+### Defining sizes in EMs / REMs / PXs 
 
 
 
