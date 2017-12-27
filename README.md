@@ -49,4 +49,24 @@ This means that `em`s will scale according to local font size (which might be in
 Check out the following example: https://jsfiddle.net/wagner89/ejqj23g1/4/
 Play around changing the font-size for the `html` and the differnet `div`s. You can see that using `em` and `rem` give you control over how to scale in different environments. 
 
+### 2. Stacking contexts and Z-indexes
+#### (or why can't I see my element, part 1.)
+
+Every developer doing front end work is familiar with the notion of Z-index, a property you can set to define in what order elements stack on on top of the other - in terms of depth. So, a small Z-index is at the bottom (or farthest from the user), and a large Z-index is at the top (or closer to the user).
+
+The following examples attempt to illustrate the twist that CSS puts on this simple notion, by introducing **stacking contexts**.
+
+...
+
+To explain the above: inn CSS, we distinguish between any number of stacking contexts, which can each be seen as a separate container as far as Z-index is concerned. If you have three boxes in the root of your page, and want to order them in a specific way, but then again each of them have three boxes as children, which also need a specific ordering, stacking contexts help you out: you can have one for the three initial boxes (this, incidentally, will be your **root** stacking context, since it's the bottom most on your page), and you can define a separate, so called **local** stacking context for each of the three boxes, to order their content as you please, but independently of the ordering of the initial boxes.
+
+What creates a new stacking context? (Not a complete list, for that see [this](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context) link)
+ - the root element of document (HTML) - obviously
+ - elements with position value "absolute" or "relative", with a specified Z-index
+ - elements with a position value "fixed"
+ - elements that are a child of a flex (flexbox) container, with a specified Z-index
+ - elements that are transparent (opacity < 1)
+ 
+ Any time you set the Z-index of a given element, but it fails to jump on top of whatever it's behind, even though it has a larger Z-index value, go ahead and read [this](https://philipwalton.com/articles/what-no-one-told-you-about-z-index/) article!
+
 
