@@ -15,7 +15,7 @@ This is a (hopefully) evolving collection of CSS tidbits, explained briefly in w
 #### (feel free to branch this repo and create PRs if you want to add a topic)
 1. [Defining sizes in EMs / REMs / PXs](https://github.com/wagner89/CSSTalk/blob/master/README.md#defining-sizes-in-ems--rems--pxs) 
 2. [Stacking contexts and Z-indexes](https://github.com/wagner89/CSSTalk/blob/master/README.md#2-stacking-contexts-and-z-indexes)
-3. [Confusing hidden overflow with bad Z-index](https://github.com/wagner89/CSSTalk/blob/master/README.md#3-confusing-hidden-overflow-with-bad-z-index)
+3. [Confusing hidden overflow with incorrect Z-index](https://github.com/wagner89/CSSTalk/blob/master/README.md#3-confusing-hidden-overflow-with-bad-z-index)
 4. Defininf colors, constants, opacity
 5. Padding vs margin (vertical margin collapsing)
 6. Specificity and the !important atribute
@@ -34,7 +34,7 @@ Let's get this out of the way first: the notion of `DP` or `DDP` (and many more 
 
 In CSS, we can use `px`, which is a `CSS pixel`, and it is always **1/96 physical inches** (the same as `user unit` in SVG). Of course, this means that depending on the screen and how many `device pixels` are on the screen, there will be a ratio between one `device pixel` and one `px`.
 
-**All CSS units of lenght translate down to `px`, so other units are definable as (X * 1px)**
+All CSS units of lenght translate down to `px`, so other units are definable as (X * 1px)
 
 `em` and `rem` are both such units, and by default they both translate to `16px`s. They both are relative values to a given font size, but different ones:
 
@@ -48,7 +48,7 @@ This means that `em`s will scale according to local font size (which might be in
 
 Check out the following example: **https://jsfiddle.net/wagner89/ejqj23g1/4/**
 
-Play around changing the font-size for the `html` and the differnet `div`s. You can see that using `em` and `rem` give you control over how to scale in different environments. 
+Play around changing the font-size for the `html` and the differnet `div`s. You can see that using `em` and `rem` give you control over how to scale globally or locally. A wonderful article on the subject is [this](https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984) one.
 
 ### 2. Stacking contexts and Z-indexes
 #### (or why can't I see my element, part 1.)
@@ -68,12 +68,12 @@ What creates a new stacking context? (Not a complete list, for that see [this](h
  
 Any time you set the Z-index of a given element, but it fails to jump on top of whatever it's behind, even though it has a larger Z-index value, go ahead and read [this](https://philipwalton.com/articles/what-no-one-told-you-about-z-index/) article!
 
-### 3. Confusing hidden overflow with bad Z-index
+### 3. Confusing hidden overflow with incorrect Z-index
 #### (or why can't I see my element, part 2.)
 
 So, you've placed a message box on your page, set it's z-index higher than your cholesterol after Christmas dinner, and still, the page's top header seems to be in front of it. You've checked opacity, position, and everything else you could think of which affects stacking contexts, but nothing. Here's where **overflow** might come into play
 
-Check this out: 
+Just check out this **[Hidden Overflow CodePen]**(https://codepen.io/wagner89/pen/rpypdX?editors=1100)
 
 So, always remember that just because something seems under something else, it might be above, but not drawn at all.
 
