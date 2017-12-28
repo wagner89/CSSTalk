@@ -73,7 +73,7 @@ Any time you set the Z-index of a given element, but it fails to jump on top of 
 
 So, you've placed a message box on your page, set it's z-index higher than your cholesterol after Christmas dinner, and still, the page's top header seems to be in front of it. You've checked opacity, position, and everything else you could think of which affects stacking contexts, but nothing. Here's where **overflow** might come into play
 
-Just check out this **[Hidden Overflow CodePen]**(https://codepen.io/wagner89/pen/rpypdX?editors=1100)
+Just check out this **[Hidden Overflow CodePen](https://codepen.io/wagner89/pen/rpypdX?editors=1100)**
 
 So, always remember that just because something seems under something else, it might be above, but not drawn at all.
 
