@@ -46,7 +46,7 @@ All CSS units of lenght translate down to `px`, so other units are definable as 
 
 This means that `em`s will scale according to local font size (which might be inherited), while `rem`s onl;y care about the font-size of the `html` or root element.
 
-Check out the following: ---
+Check out the following **[example](https://codepen.io/wagner89/pen/mpMOOW?editors=1100)**
 
 Play around changing the font-size for the `html` and the differnet `div`s. You can see that using `em` and `rem` give you control over how to scale globally or locally. A wonderful article on the subject is [this](https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984) one.
 
