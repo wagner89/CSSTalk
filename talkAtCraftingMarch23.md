@@ -1,6 +1,6 @@
 ## Front end styling talk @ Crafting
 
-### CSS, SASS, SCSS
+## CSS, SASS, SCSS
 - what are the differences, why should we care?
   - Sassy CSS adds a preprocessor
   - codewise: CSS3 < SASS === SCSS with more CSS like syntax
