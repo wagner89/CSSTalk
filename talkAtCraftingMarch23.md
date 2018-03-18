@@ -5,6 +5,10 @@
   - Sassy CSS adds a preprocessor
   - codewise: CSS3 < SASS === SCSS with more CSS like syntax
 
+#### 0. Math
+```
+width: (120em/16) * 50%
+```
 #### 1. Declaring variables (actually, more like constants)
 
 ```
