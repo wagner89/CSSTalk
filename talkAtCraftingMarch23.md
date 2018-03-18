@@ -125,11 +125,51 @@ $z-indexes: (
 }
 ```
 
-## Less known CSS 
+## CSS specific topics
+
+#### 1. Specificity
+
+```
+<div id="test">
+  <span>Text</span>
+</div>
+
+span { color: black !important }
+span { color: red; }
+div span { color: blue; }
+div#test span { color: green; }
+```
+
+#### 2. Stacking contexts
+
+Stacking contexts appear on an element when:
+
+[root, position != static && z-index != auto, opacity < 0] => these all form a new stacking context
+
+Inside the same stacking context, the stacking order is:
+
+[root,
+ positioned elements (with negative z-order),
+ non-positioned elements,
+ positioned (with z-order auto, in appearance order),
+ positioned (with positive z-order)] => determine the order of contexts, and of elements inside of contexts
+ 
+#### 3. Units of measurment (px, em, rem)
+
+#### 4. Overflow vs. Z-index
+
+#### 5. The box model
+
+Content - padding - border - margin
+
+#### 6. Margin collapsing
+
+Vertical margins collapse on sybling elements to the greater of the two
+
+#### 7. Flexbox
 
 
-
-
+#### 8. 
 
 
 ### Sources
