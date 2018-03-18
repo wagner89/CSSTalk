@@ -72,3 +72,27 @@ _(also, we should probably get into the habit of using font stacks instead of a 
 
 .teamMemberSection { @include border-radius(10px); }
 ```
+
+#### 5. Inheritance 
+```
+%generic-popup {
+  border: 1px solid #FFFFFF;
+  padding: 1em;
+  color: #E1E1E1;
+  
+}
+
+.popup {
+  @extend %generic-popup;
+}
+
+.popup-success {
+  @extend %generic-popup;
+  border-color: green;
+}
+
+.popup-error {
+  @extend %generic-popup;
+  border-color: red;
+}
+```
