@@ -1,13 +1,13 @@
 ## Front end styling talk @ Crafting
 
-1. CSS, SASS, SCSS
-    - what are the differences, why should we care?
-      - Sassy CSS adds a preprocessor
-      - codewise: CSS3 < SASS === SCSS with more CSS like syntax
+#### CSS, SASS, SCSS
+- what are the differences, why should we care?
+  - Sassy CSS adds a preprocessor
+  - codewise: CSS3 < SASS === SCSS with more CSS like syntax
       
-Examples:
+#### Examples:
 
-1. Declaring variables (actually, more like constants)
+##### 1. Declaring variables (actually, more like constants)
 
 ```
 _crafting.scss
@@ -21,7 +21,7 @@ $menu-fontsize-large: 2.5rem;
 
 ```
 
-2. Partial style sheet files
+##### 2. Partial style sheet files
 ```
 @import 'crafting';
 
@@ -31,7 +31,7 @@ body {
 }
 ```
 
-3. Nesting
+##### 3. Nesting
 ```
 side-bar {
   a {
@@ -61,7 +61,7 @@ side-bar h1 {
 
 _(also, we should probably get into the habit of using font stacks instead of a single font, it's industry best practice)_
 
-4. Mixins
+##### 4. Mixins
 ```
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
