@@ -14,6 +14,8 @@ _crafting.scss
 
 $crafting-font-stack: Helvetica, sans-serif;
 $crafting-primary-color: #12ebff;
+$menu-fontsize-normal: 1.75rem;
+$menu-fontsize-large: 2.5rem;
 
 ```
 
@@ -23,6 +25,34 @@ $crafting-primary-color: #12ebff;
 
 body {
   font: 100% $crafting-font-stack;
+  color: $crafting-primary-color;
+}
+```
+
+3. Nesting
+```
+side-bar {
+  a {
+    font-size: $menu-fontsize-normal;
+    color: $crafting-secondary-color;
+  }
+  
+  h1 {
+    font-size: $menu-fontsize-large;
+    color: $crafting-primary-color;
+  }
+}
+```
+
+vs.
+```
+side-bar a {
+  font-size: $menu-fontsize-normal;
+  color: $crafting-secondary-color;
+}
+
+side-bar h1 {
+  font-size: $menu-fontsize-large;
   color: $crafting-primary-color;
 }
 ```
