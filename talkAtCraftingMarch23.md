@@ -13,7 +13,9 @@ Examples:
 _crafting.scss
 
 $crafting-font-stack: Helvetica, sans-serif;
+
 $crafting-primary-color: #12ebff;
+
 $menu-fontsize-normal: 1.75rem;
 $menu-fontsize-large: 2.5rem;
 
@@ -59,3 +61,16 @@ side-bar h1 {
 
 _(also, we should probably get into the habit of using font stacks instead of a single font, it's industry best practice)_
 
+4. Mixins
+```
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+---
+
+.teamMemberSection { @include border-radius(10px); }
+```
