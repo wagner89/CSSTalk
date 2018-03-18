@@ -77,6 +77,30 @@ _(also, we should probably get into the habit of using font stacks instead of a 
 .teamMemberSection { @include border-radius(10px); }
 ```
 
+```
+@function z($name) {
+    @if index($z-indexes, $name) {
+        @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+    } @else {
+        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+        @return null;
+    }
+}
+
+$z-indexes: (
+    "outdated-browser",
+    "modal",
+    "site-header",
+    "page-wrapper",
+    "site-footer"
+);
+
+---
+
+.site-header {
+    z-index: z('site-header');
+}
+```
 #### 5. Inheritance 
 ```
 %generic-popup {
@@ -100,3 +124,14 @@ _(also, we should probably get into the habit of using font stacks instead of a 
   border-color: red;
 }
 ```
+
+
+
+
+
+
+
+
+### Sources
+- _[Engage Interactive](https://engageinteractive.co.uk/blog/top-10-scss-mixins)_
+- _[SASS website](https://sass-lang.com/guide)_
