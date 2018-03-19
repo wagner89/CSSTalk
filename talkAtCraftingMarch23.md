@@ -214,5 +214,5 @@ Vertical margins collapse on sybling elements to the greater of the two
 - _[SASS website](https://sass-lang.com/guide)_
 - _[Phillip Walton](https://philipwalton.com/articles/what-no-one-told-you-about-z-index/)_
 - _[envato](https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984)_
-- _[Engage Interactive 2] (https://engageinteractive.co.uk/blog/em-vs-rem-vs-px)_
+- _[Engage Interactive 2](https://engageinteractive.co.uk/blog/em-vs-rem-vs-px)_
 - _[zellwk](https://zellwk.com/blog/media-query-units/)_
