@@ -169,6 +169,20 @@ Inside the same stacking context, the stacking order is:
  
 #### 3. Units of measurment (px, em, rem)
 
+`px` is stable across the device you are using
+`em` is relative to the current local font-size
+`rem` is relative to the root `html` font-size (which, unless set is inherited from the browser settings!)
+
+Some different things to consider:
+ - setting `html` font-size might make the site not respond to browser font size settings done by the user
+ - `rem` is generally accepted as the proper choice for font sizing
+ - `em` is good for paddings, margins, etc in specific reusable components (ex. button padding)
+ - `rem` is good for media queries, unless you start zooming, in which case only `em` does not missfire (except on Safari)
+ - `px` is not good for media query breakpoints, since it doesn't scale with font-size (`!`)
+ - `rem` is never influenced by nesting, but `em` might be difficult to manage due to inheritance
+ - SASS calculations are useful when thinking in `px` but specifying in `em` or `rem`
+ - layouting, for ex. column layout proportions should always use `%` instead of other units, to keep layouts fluid
+ 
 The rule agreed upon for our project is 
 
 | Unit of measurment   | Usage  |
@@ -176,6 +190,8 @@ The rule agreed upon for our project is
 | rem  | fonts  |
 | em  | margin, padding, etc  |
 | px  | last resort  |
+
+My conclusion: best judgment should be used not rigid guidelines
 
 #### 4. Overflow vs. Z-index
 
