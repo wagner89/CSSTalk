@@ -23,6 +23,8 @@ $menu-fontsize-large: 2.5rem;
 
 ```
 
+How we already use it: ex. `_colors.scss`
+
 #### 2. Partial style sheet files
 ```
 @import 'crafting';
@@ -32,6 +34,7 @@ body {
   color: $crafting-primary-color;
 }
 ```
+_(also, we should probably get into the habit of using font stacks instead of a single font, it's industry best practice)_
 
 #### 3. Nesting
 ```
@@ -60,8 +63,6 @@ side-bar h1 {
   color: $crafting-primary-color;
 }
 ```
-
-_(also, we should probably get into the habit of using font stacks instead of a single font, it's industry best practice)_
 
 #### 4. Mixins
 ```
@@ -101,6 +102,9 @@ $z-indexes: (
     z-index: z('site-header');
 }
 ```
+
+How we use it already: https://github.com/lolmaus/breakpoint-slicer
+
 #### 5. Inheritance 
 ```
 %generic-popup {
@@ -124,6 +128,8 @@ $z-indexes: (
   border-color: red;
 }
 ```
+
+How we use it already: `dialogHeader` in Approval/Decline Dialogs
 
 ## CSS specific topics
 
@@ -162,6 +168,14 @@ Inside the same stacking context, the stacking order is:
  positioned (with positive z-order)] => determine the order of contexts, and of elements inside of contexts
  
 #### 3. Units of measurment (px, em, rem)
+
+The rule agreed upon for our project is 
+
+| Unit of measurment   | Usage  |
+|:-:|:-:|
+| rem  | fonts  |
+| em  | margin, padding, etc  |
+| px  | last resort  |
 
 #### 4. Overflow vs. Z-index
 
