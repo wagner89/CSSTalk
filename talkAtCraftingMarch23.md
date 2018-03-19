@@ -129,6 +129,11 @@ $z-indexes: (
 
 #### 1. Specificity
 
+Avoid `!important` if possible, as it blocks others besides helping you (never use it in libraries).
+More specific selectors win out:
+
+`types/pseudos` (div, ::after) < `class, attribute, pseudo-class` (.popup, [type='button'], :hover) < `ids` (#thisDiv)
+
 ```
 <div id="test">
   <span>Text</span>
@@ -139,6 +144,8 @@ span { color: red; }
 div span { color: blue; }
 div#test span { color: green; }
 ```
+
+A nice tool for this is [this calculator](https://specificity.keegan.st/)
 
 #### 2. Stacking contexts
 
