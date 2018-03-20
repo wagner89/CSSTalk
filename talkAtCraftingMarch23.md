@@ -2,7 +2,7 @@
 
 ## CSS, SASS, SCSS
 - what are the differences, why should we care?
-  - Sassy CSS adds a preprocessor
+  - Sassy CSS adds a preprocessor (like Stylus or PostCSS, etc.)
   - codewise: CSS3 < SASS === SCSS with more CSS like syntax
 
 #### 0. Math
@@ -133,6 +133,26 @@ How we use it already: `dialogHeader` in Approval/Decline Dialogs
 
 ## CSS specific topics
 
+#### 0. Reseting and normalization
+
+Browsers are divers, and this makes front end development a real hassle.
+
+The lazy mans reset
+
+```
+* {
+  margin: 0;
+  padding; 0'
+}
+```
+
+The first wildly popular solution: the Meyer reset [reset.css](https://meyerweb.com/eric/tools/css/reset/reset.css)
+
+The shift in approach: instead of a full reset, default everything to a standard baseline, ex 
+[The normalize.css library](http://nicolasgallagher.com/about-normalize-css/)
+
+This is HTML5 ready, and used by large frameworks (like BootstrapJS)
+
 #### 1. Specificity
 
 Avoid `!important` if possible, as it blocks others as a side effect helping you (never use it in libraries).
@@ -223,7 +243,21 @@ This unfortunately means that `overflow-x: visible` and `overflow-y: hidden` use
 
 #### 5. The box model
 
-Content - padding - border - margin
+Every HTML element is comprised of four boxes:
+
+`content` - `padding` - `border` - `margin`
+
+The `box-sizing` CSS property can be used to affect what the `width`,`height`, `min-width` and `min-height` properties actually specify:
+  - `content-box` - the default, does not include padding and borders
+  - `borer-box` - includes padding and borders as well
+  
+Many sources swear by the universal box-sizing approach: 
+```
+* {
+    box-sizing: border-box;
+}
+```
+which ensures that you never get in a mess because of unexpected padding/border sizing screwing up layouting.
 
 #### 6. Margin collapsing
 
@@ -233,7 +267,9 @@ A positive and a negative margin get added instead of collapsing to the greater 
 
 #### 7. Flexbox
 
-Layout alternative already embedded in CSS3.
+Layout alternative already embedded in CSS3 - two axis model: main and cross axis.
+
+
 
 #### 8. 
 
