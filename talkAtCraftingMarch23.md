@@ -200,6 +200,8 @@ The rule agreed upon for our project is
 
 My conclusion: best judgment should be used not rigid guidelines
 
+Bonus: what to use for `line-height`, to make sure it's double? Actually, the most safe way to do this, is to not pass a unit, just plain old 2. This is inherited further regardless of what font-size is applied in a given element.
+
 #### 4. Overflow vs. Z-index
 
 Check out this [CodePen](https://codepen.io/wagner89/pen/rpypdX?editors=1100)
@@ -243,3 +245,4 @@ Layout alternative already embedded in CSS3.
 - _[envato](https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984)_
 - _[Engage Interactive 2](https://engageinteractive.co.uk/blog/em-vs-rem-vs-px)_
 - _[zellwk](https://zellwk.com/blog/media-query-units/)_
+- _[sitepoint](https://www.sitepoint.com/3-things-almost-one-knows-css/)_
