@@ -135,8 +135,9 @@ How we use it already: `dialogHeader` in Approval/Decline Dialogs
 
 #### 1. Specificity
 
-Avoid `!important` if possible, as it blocks others besides helping you (never use it in libraries).
-More specific selectors win out:
+Avoid `!important` if possible, as it blocks others as a side effect helping you (never use it in libraries).
+
+When applying stlyes, more specific selectors win out:
 
 `types/pseudos` (div, ::after) < `class, attribute, pseudo-class` (.popup, [type='button'], :hover) < `ids` (#thisDiv)
 
@@ -151,9 +152,13 @@ div span { color: blue; }
 div#test span { color: green; }
 ```
 
+For equal specificity the order of declaration is what matters -> the latter wins out over the former.
+
 A nice tool for this is [this calculator](https://specificity.keegan.st/)
 
 #### 2. Stacking contexts
+
+Try to bring the middle square in front this [example](https://codepen.io/wagner89/pen/baqvrw?editors=1100)
 
 Stacking contexts appear on an element when:
 
@@ -166,6 +171,8 @@ Inside the same stacking context, the stacking order is:
  non-positioned elements,
  positioned (with z-order auto, in appearance order),
  positioned (with positive z-order)] => determine the order of contexts, and of elements inside of contexts
+ 
+With SASS, it's a good practice to define levels within the stacking order (i.e. root, menu, popup, etc)
  
 #### 3. Units of measurment (px, em, rem)
 
@@ -195,6 +202,23 @@ My conclusion: best judgment should be used not rigid guidelines
 
 #### 4. Overflow vs. Z-index
 
+Check out this [CodePen](https://codepen.io/wagner89/pen/rpypdX?editors=1100)
+
+Overflow works in different ways according to it's value 
+  `scroll` - always scroll
+  `auto` - scroll if needed,
+  `hidden` - clip all overflowing content
+  `visible` - show all overflowing content
+  
+Also works pe axis, `overflow-x` and `overflow-y` separately, but
+
+```
+The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.
+```
+
+This unfortunately means that `overflow-x: visible` and `overflow-y: hidden` used together is essentially just
+`overflow-x: auto` and `overflow-y: hidden`.
+
 #### 5. The box model
 
 Content - padding - border - margin
@@ -203,8 +227,11 @@ Content - padding - border - margin
 
 Vertical margins collapse on sybling elements to the greater of the two
 
+A positive and a negative margin get added instead of collapsing to the greater (?)
+
 #### 7. Flexbox
 
+Layout alternative already embedded in CSS3.
 
 #### 8. 
 
