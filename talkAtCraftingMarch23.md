@@ -269,11 +269,6 @@ A positive and a negative margin get added instead of collapsing to the greater 
 
 Layout alternative already embedded in CSS3 - two axis model: main and cross axis.
 
-
-
-#### 8. 
-
-
 ### Sources
 - _[Engage Interactive](https://engageinteractive.co.uk/blog/top-10-scss-mixins)_
 - _[SASS website](https://sass-lang.com/guide)_
@@ -282,3 +277,5 @@ Layout alternative already embedded in CSS3 - two axis model: main and cross axi
 - _[Engage Interactive 2](https://engageinteractive.co.uk/blog/em-vs-rem-vs-px)_
 - _[zellwk](https://zellwk.com/blog/media-query-units/)_
 - _[sitepoint](https://www.sitepoint.com/3-things-almost-one-knows-css/)_
+- _[w3schools](https://www.w3schools.com/cssref)_
+- _[css-tricks](https://css-tricks.com)_
