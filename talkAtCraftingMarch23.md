@@ -153,6 +153,14 @@ The shift in approach: instead of a full reset, default everything to a standard
 
 This is HTML5 ready, and used by large frameworks (like BootstrapJS)
 
+Normalize.css vs CSS resets:
+
+ - targets only the styles that need normalizing
+ - preserves useful browser defaults rather than erasing them
+ - corrects bugs and common browser inconsistencies
+ - doesn't clutter the debugging tools
+ - has better documentation
+
 #### 1. Specificity
 
 Avoid `!important` if possible, as it blocks others as a side effect helping you (never use it in libraries).
