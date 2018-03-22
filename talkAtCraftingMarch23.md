@@ -179,6 +179,8 @@ While flexbox is used to create fluid designs which work well if responsiveness 
 
 ![](https://daverupert.com/images/posts/2017/css-grid.jpg)
 
+Nice way to compare the two is by reading [this complete guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [this complete guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
 ##### When in doubt, check the CSS reference [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 ## CSS, SASS, SCSS
