@@ -167,6 +167,7 @@ These rules does not apply when an element is `floating` or `absolute`.
 
 Layout alternative already embedded in CSS3 - two axis model: main and cross axis.
 
+##### When in doubt, check the CSS reference [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 ## CSS, SASS, SCSS
 - what are the differences, why should we care?
@@ -304,6 +305,7 @@ For example, what other world would provide you with 6 different kinds of values
 `initial`, `computed`, `resolved`, `specified`, `used`, and `actual`
 
 ### Sources
+- _[the MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)_
 - _[Engage Interactive](https://engageinteractive.co.uk/blog/top-10-scss-mixins)_
 - _[SASS website](https://sass-lang.com/guide)_
 - _[Phillip Walton](https://philipwalton.com/articles/what-no-one-told-you-about-z-index/)_
