@@ -1,12 +1,12 @@
-## Stuff I should've known before they let me write production CSS 
+# Stuff I should've known before they let me write production CSS 
 
-# Vanilla CSS topics
+### Vanilla CSS topics
 
 #### 0. Reseting and normalization
 
 Browsers are different and opinionated, and this makes front end development a real hassle.
 
-https://imgix.ranker.com/user_node_img/50018/1000359970/original/what-are-we-photo-u1?w=650&q=50&fm=jpg&fit=crop&crop=faces
+![alt text](https://imgix.ranker.com/user_node_img/50018/1000359970/original/what-are-we-photo-u1?w=650&q=50&fm=jpg&fit=crop&crop=faces "Logo Title Text 1")
 
 The lazy mans reset
 
