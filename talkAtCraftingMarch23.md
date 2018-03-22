@@ -163,11 +163,21 @@ The first/last child with a positive margin will push its own margin outside its
 
 These rules does not apply when an element is `floating` or `absolute`.
 
-#### 7. Flexbox
+#### 7. Flexbox and CSS Grid
 
 ![](https://img.devrant.com/devrant/rant/r_26154_fwP7c.jpg)
 
 Layout alternative already embedded in CSS3 - two axis model: main and cross axis.
+
+Check out the examples [here](https://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
+
+Play with frogs [here](http://flexboxfroggy.com/)
+
+![](https://i0.wp.com/theitteam.com.au/wp-content/uploads/2015/06/css-center-align-meme.jpg)
+
+While flexbox is used to create fluid designs which work well if responsiveness is key, an alternative to flowing content across boxes is to align it to a fixed grid - and maybe not need media queries anymore?
+
+![](https://daverupert.com/images/posts/2017/css-grid.jpg)
 
 ##### When in doubt, check the CSS reference [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
