@@ -1,7 +1,4 @@
-<p align="justify">
 # Stuff I should've known before they let me write production CSS 
-</p>
-
 
 ### Vanilla CSS topics
 
@@ -37,11 +34,11 @@ Normalize.css vs CSS resets:
 
 #### 1. Specificity
 
-Avoid `!important` if possible, as it blocks others as a side effect helping you (never use it in libraries).
+Style sheets can be 
 
 When applying stlyes, more specific selectors win out:
 
-`types/pseudos` (div, ::after) < `class, attribute, pseudo-class` (.popup, [type='button'], :hover) < `ids` (#thisDiv)
+`type/pseudo-element` (div, ::after) < `class, attribute, pseudo-class` (.popup, [type='button'], :hover) < `ids` (#thisDiv) < `inline stlyes` (<div style="..." />)
 
 ```
 <div id="test">
@@ -53,8 +50,9 @@ span { color: red; }
 div span { color: blue; }
 div#test span { color: green; }
 ```
-
 For equal specificity the order of declaration is what matters -> the latter wins out over the former.
+
+Avoid `!important` if possible, as it blocks others as a side effect helping you (never use it in libraries).
 
 A nice tool for this is [this calculator](https://specificity.keegan.st/)
 
@@ -146,6 +144,8 @@ which ensures that you never get in a mess because of unexpected padding/border 
 Vertical margins collapse on sybling elements to the greater of the two
 
 A positive and a negative margin get added instead of collapsing to the greater (?)
+
+Does not apply when an element is `floating` or `absolute`.
 
 #### 7. Flexbox
 
