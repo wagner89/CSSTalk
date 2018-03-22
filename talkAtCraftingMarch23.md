@@ -1,4 +1,7 @@
+<p align="justify">
 # Stuff I should've known before they let me write production CSS 
+</p>
+
 
 ### Vanilla CSS topics
 
