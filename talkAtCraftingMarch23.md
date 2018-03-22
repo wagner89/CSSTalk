@@ -246,6 +246,9 @@ side-bar h1 {
 ```
 
 #### 4. Mixins
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtFLGOJtFEYNzAsSrMFhJcYQQ6qdlG6LG8RilsMcFNBjKVQUMw)
+
 ```
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
