@@ -141,11 +141,17 @@ which ensures that you never get in a mess because of unexpected padding/border 
 
 #### 6. Margin collapsing
 
-Vertical margins collapse on sybling elements to the greater of the two
+Vertical margins collapse to the greater of the two adjacent margins, or to just one of them if they are equal, for:
 
-A positive and a negative margin get added instead of collapsing to the greater (?)
+- adjacent sybling elements
+- first/last children of an element and its parent element
+- top and bottom margin of a heightless empty block
 
-Does not apply when an element is `floating` or `absolute`.
+A positive and a negative margin get added instead of collapsing to the greater, while two negatives yield the most negative (smallest) margin.
+
+The first/last child with a positive margin will push its own margin outside its parents block even if its parent has 0 margin.
+
+These rules does not apply when an element is `floating` or `absolute`.
 
 #### 7. Flexbox
 
