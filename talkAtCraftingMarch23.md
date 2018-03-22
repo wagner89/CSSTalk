@@ -1,4 +1,5 @@
 # Stuff I should've known before they let me write production CSS 
+![](https://i.imgur.com/Q3cUg29.gif)
 
 ### Vanilla CSS topics
 
@@ -56,6 +57,7 @@ div#test span { color: green; }
 ```
 For equal specificity the order of declaration is what matters -> the latter wins out over the former.
 
+![Batman](https://memeexplorer.com/cache/846.jpg)
 Avoid `!important` if possible, as it blocks others as a side effect helping you (never use it in libraries).
 
 A nice tool for this is [this calculator](https://specificity.keegan.st/)
