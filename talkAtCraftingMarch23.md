@@ -9,6 +9,7 @@ Browsers are different and opinionated, and this makes front end development a r
 
 ![alt text](https://imgix.ranker.com/user_node_img/50018/1000359970/original/what-are-we-photo-u1?w=650&q=50&fm=jpg&fit=crop&crop=faces)
 
+
 The lazy mans reset
 
 ```
@@ -58,6 +59,7 @@ div#test span { color: green; }
 For equal specificity the order of declaration is what matters -> the latter wins out over the former.
 
 ![Batman](https://memeexplorer.com/cache/846.jpg)
+
 Avoid `!important` if possible, as it blocks others as a side effect helping you (never use it in libraries).
 
 A nice tool for this is [this calculator](https://specificity.keegan.st/)
@@ -65,6 +67,8 @@ A nice tool for this is [this calculator](https://specificity.keegan.st/)
 #### 2. Stacking contexts
 
 Try to bring the middle square in front this [example](https://codepen.io/wagner89/pen/baqvrw?editors=1100)
+
+![](http://s2.quickmeme.com/img/ae/ae47b29373cbcce38d4969f0a11b82f2f2332efef505133ef16a810720d72ed6.jpg)
 
 Stacking contexts appear on an element when:
 
@@ -78,7 +82,7 @@ Inside the same stacking context, the stacking order is:
  positioned (with z-order auto, in appearance order),
  positioned (with positive z-order)] => determine the order of contexts, and of elements inside of contexts
  
-With SASS, it's a good practice to define levels within the stacking order (i.e. root, menu, popup, etc)
+_With SASS, it's a good practice to define levels within the stacking order (i.e. root, menu, popup, etc)_
  
 #### 3. Units of measurment (px, em, rem)
 
