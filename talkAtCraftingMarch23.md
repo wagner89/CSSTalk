@@ -34,7 +34,11 @@ Normalize.css vs CSS resets:
 
 #### 1. Specificity
 
-Style sheets can be 
+Style sheets can be, in order of priority:
+- inline
+- internal
+- external
+- browser default
 
 When applying stlyes, more specific selectors win out:
 
