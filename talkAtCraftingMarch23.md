@@ -6,7 +6,7 @@
 
 Browsers are different and opinionated, and this makes front end development a real hassle.
 
-![alt text](https://imgix.ranker.com/user_node_img/50018/1000359970/original/what-are-we-photo-u1?w=650&q=50&fm=jpg&fit=crop&crop=faces =400x "Logo Title Text 1")
+![alt text](https://imgix.ranker.com/user_node_img/50018/1000359970/original/what-are-we-photo-u1?w=650&q=50&fm=jpg&fit=crop&crop=faces =400x)
 
 The lazy mans reset
 
