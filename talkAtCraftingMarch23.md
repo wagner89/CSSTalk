@@ -289,6 +289,10 @@ How we use it already: https://github.com/lolmaus/breakpoint-slicer
 
 How we use it already: `dialogHeader` in Approval/Decline Dialogs
 
+### You can't ever learn CSS, you can at most get used to it
+For example, what other world would provide you with 6 different kinds of values for any property:
+`initial`, `computed`, `resolved`, `specified`, `used`, and `actual`
+
 ### Sources
 - _[Engage Interactive](https://engageinteractive.co.uk/blog/top-10-scss-mixins)_
 - _[SASS website](https://sass-lang.com/guide)_
