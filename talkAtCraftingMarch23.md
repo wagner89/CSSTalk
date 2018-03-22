@@ -165,6 +165,8 @@ These rules does not apply when an element is `floating` or `absolute`.
 
 #### 7. Flexbox
 
+![](https://img.devrant.com/devrant/rant/r_26154_fwP7c.jpg)
+
 Layout alternative already embedded in CSS3 - two axis model: main and cross axis.
 
 ##### When in doubt, check the CSS reference [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
