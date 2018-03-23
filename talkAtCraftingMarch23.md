@@ -1,5 +1,5 @@
 # Stuff I should've known before they let me write production CSS 
-![](https://i.giphy.com/media/yYSSBtDgbbRzq/giphy.webp=600x)
+![Peter Griffin here](https://i.giphy.com/media/yYSSBtDgbbRzq/giphy.webp =600x)
 
 ### Vanilla CSS topics
 
@@ -7,7 +7,7 @@
 
 Browsers are different and opinionated, and this makes front end development a real hassle.
 
-![alt text](http://weknowmemes.com/wp-content/uploads/2012/07/testing-webpages-on-different-browsers.jpg=400x)
+![browsers meme](http://weknowmemes.com/wp-content/uploads/2012/07/testing-webpages-on-different-browsers.jpg =400x)
 
 
 The lazy mans reset
