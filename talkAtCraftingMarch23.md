@@ -114,6 +114,15 @@ My conclusion: best judgment should be used not rigid guidelines
 
 Bonus: what to use for `line-height`, to make sure it's double? Actually, the most safe way to do this, is to not pass a unit, just plain old 2. This is inherited further regardless of what font-size is applied in a given element.
 
+Other useful units of measurment in CSS:
+
+| Unit of measurment | Usage |
+|:-:|:-:|
+| vw | 1% of viewport width |
+| vh | 1% of viewport height |
+| vmin | 1% of smaller dimension of viewport |
+| vmax | 1% of larger dimension of viewport |
+
 #### 4. Overflow vs. Z-index
 
 Check out this [CodePen](https://codepen.io/wagner89/pen/rpypdX?editors=1100)
