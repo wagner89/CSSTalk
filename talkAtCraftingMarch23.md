@@ -72,17 +72,18 @@ Try to bring the middle square in front this [example](https://codepen.io/wagner
 
 ![](http://s2.quickmeme.com/img/ae/ae47b29373cbcce38d4969f0a11b82f2f2332efef505133ef16a810720d72ed6.jpg)
 
-Stacking contexts appear on an element when:
+New stacking contexts are created by:
+- `root` element
+- elements with `position <> static` and `z-index <> auto`
+- `opacity < 1`
 
-[root, position != static && z-index != auto, opacity < 0] => these all form a new stacking context
+Inside any stacking context, the stacking order is:
 
-Inside the same stacking context, the stacking order is:
-
-[root,
- positioned elements (with negative z-order),
- non-positioned elements,
- positioned (with z-order auto, in appearance order),
- positioned (with positive z-order)] => determine the order of contexts, and of elements inside of contexts
+- root,
+- positioned elements (with negative z-order),
+- non-positioned elements,
+- positioned (with z-order auto, in appearance order),
+- positioned (with positive z-order)] => determine the order of contexts, and of elements inside of contexts
  
 _With SASS, it's a good practice to define levels within the stacking order (i.e. root, menu, popup, etc)_
  
@@ -331,7 +332,7 @@ How we use it already: https://github.com/lolmaus/breakpoint-slicer
 How we use it already: `dialogHeader` in Approval/Decline Dialogs
 
 ### You can't ever learn CSS, you can at most get used to it
-For example, what other world would provide you with 6 different kinds of values for any property:
+What other environment would provide you with 6 different kinds of values for any property:
 `initial`, `computed`, `resolved`, `specified`, `used`, and `actual`
 
 ### Sources
