@@ -64,6 +64,8 @@ Avoid `!important` if possible, as it blocks others as a side effect helping you
 
 A nice tool for this is [this calculator](https://specificity.keegan.st/)
 
+Also, a great place to check on selector syntax [is this page](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+
 #### 2. Stacking contexts
 
 Try to bring the middle square in front this [example](https://codepen.io/wagner89/pen/baqvrw?editors=1100)
