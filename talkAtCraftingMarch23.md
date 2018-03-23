@@ -139,6 +139,8 @@ Every HTML element is comprised of four boxes:
 
 `content` - `padding` - `border` - `margin`
 
+![box-model](http://www.turnwall.com/wp-content/uploads/2014/06/box-model-css.png)
+
 The `box-sizing` CSS property can be used to affect what the `width`,`height`, `min-width` and `min-height` properties actually specify:
   - `content-box` - the default, does not include padding and borders
   - `borer-box` - includes padding and borders as well
