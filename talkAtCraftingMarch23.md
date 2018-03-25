@@ -1,4 +1,4 @@
-# Stuff I should've known before they let me write production CSS 
+# Stuff I should've known before writing production CSS 
 ![Peter Griffin here](https://i.giphy.com/media/yYSSBtDgbbRzq/giphy.webp)
 
 ### Vanilla CSS topics
