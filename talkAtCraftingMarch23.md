@@ -4,26 +4,26 @@
 ## Table of contents
 
 - Vanilla CSS topics (no pre-processor involved)
-  0. Reseting and normalization
-  1. Specificity
-  2. Stacking contexts
-  3. Units of measurment (px, em, rem)
-  4. Overflow vs. Z-index
-  5. The box model
-  6. Margin collapsing
-  7. Flexbox and CSS Grid
+  1. Reseting and normalization
+  2. Specificity
+  3. Stacking contexts
+  4. Units of measurment (px, em, rem)
+  5. Overflow vs. Z-index
+  6. The box model
+  7. Margin collapsing
+  8. Flexbox and CSS Grid
   
 - CSS, SASS, SCSS
-  0. Math
-  1. Declaring variables (actually, more like constants) 
-  2. Partial style sheet files
-  3. Nesting
-  4. Mixins
-  5. Inheritance
+  1. Math
+  2. Declaring variables (actually, more like constants) 
+  3. Partial style sheet files
+  4. Nesting
+  5. Mixins
+  6. Inheritance
 
 ### Vanilla CSS topics (no pre-processor involved)
 
-#### 0. Reseting and normalization
+#### 1. Reseting and normalization
 
 Browsers are different and opinionated, and this makes front end development a real hassle.
 
@@ -54,7 +54,7 @@ Normalize.css vs CSS resets:
  - doesn't clutter the debugging tools
  - has better documentation
 
-#### 1. Specificity
+#### 2. Specificity
 
 Style sheets can be, in order of priority:
 - inline
@@ -86,7 +86,7 @@ A nice tool for this is [this calculator](https://specificity.keegan.st/)
 
 Also, a great place to check on selector syntax [is this page](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 
-#### 2. Stacking contexts
+#### 3. Stacking contexts
 
 Try to bring the middle square in front this [example](https://codepen.io/wagner89/pen/baqvrw?editors=1100)
 
@@ -107,7 +107,7 @@ Inside any stacking context, the stacking order is:
  
 _With SASS, it's a good practice to define levels within the stacking order (i.e. root, menu, popup, etc)_
  
-#### 3. Units of measurment (px, em, rem)
+#### 4. Units of measurment (px, em, rem)
 
 `px` is stable across the device you are using
 `em` is relative to the current local font-size
@@ -144,7 +144,7 @@ Other useful units of measurment in CSS:
 | vmin | 1% of smaller dimension of viewport |
 | vmax | 1% of larger dimension of viewport |
 
-#### 4. Overflow vs. Z-index
+#### 5. Overflow vs. Z-index
 
 Check out this [CodePen](https://codepen.io/wagner89/pen/rpypdX?editors=1100)
 
@@ -163,7 +163,7 @@ The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as the
 This unfortunately means that `overflow-x: visible` and `overflow-y: hidden` used together is essentially just
 `overflow-x: auto` and `overflow-y: hidden`.
 
-#### 5. The box model
+#### 6. The box model
 
 Every HTML element is comprised of four boxes:
 
@@ -183,7 +183,7 @@ Many sources swear by the universal box-sizing approach:
 ```
 which ensures that you never get in a mess because of unexpected padding/border sizing screwing up layouting.
 
-#### 6. Margin collapsing
+#### 7. Margin collapsing
 
 Vertical margins collapse to the greater of the two adjacent margins, or to just one of them if they are equal, for:
 
@@ -197,7 +197,7 @@ The first/last child with a positive margin will push its own margin outside its
 
 These rules does not apply when an element is `floating` or `absolute`.
 
-#### 7. Flexbox and CSS Grid
+#### 8. Flexbox and CSS Grid
 
 ![](https://img.devrant.com/devrant/rant/r_26154_fwP7c.jpg)
 
@@ -222,7 +222,7 @@ Nice way to compare the two is by reading [this complete guide](https://css-tric
   - Sassy CSS adds a preprocessor (like Stylus or PostCSS, etc.)
   - codewise: CSS3 < SASS === SCSS with more CSS like syntax
 
-#### 0. Math
+#### 1. Math
 <img src="http://www.sassshop.com/images/math.jpg" width="300">
 
 ```
@@ -231,7 +231,7 @@ width: (120em/16) * 50%
 
 The supported operators are `+`, `-`, `*`, `/`, and `%`. 
 
-#### 1. Declaring variables (actually, more like constants)
+#### 2. Declaring variables (actually, more like constants)
 
 ```
 _crafting.scss
@@ -247,7 +247,7 @@ $menu-fontsize-large: 2.5rem;
 
 How we already use it: ex. `_colors.scss`
 
-#### 2. Partial style sheet files
+#### 3. Partial style sheet files
 ```
 @import 'crafting';
 
@@ -258,7 +258,7 @@ body {
 ```
 _(also, we should probably get into the habit of using font stacks instead of a single font, it's industry best practice)_
 
-#### 3. Nesting
+#### 4. Nesting
 ```
 side-bar {
   a {
@@ -286,7 +286,7 @@ side-bar h1 {
 }
 ```
 
-#### 4. Mixins
+#### 5. Mixins
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtFLGOJtFEYNzAsSrMFhJcYQQ6qdlG6LG8RilsMcFNBjKVQUMw)
 
@@ -330,7 +330,7 @@ $z-indexes: (
 
 How we use it already: https://github.com/lolmaus/breakpoint-slicer
 
-#### 5. Inheritance 
+#### 6. Inheritance 
 ```
 %generic-popup {
   border: 1px solid #FFFFFF;
