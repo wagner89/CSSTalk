@@ -7,7 +7,7 @@
 
 Browsers are different and opinionated, and this makes front end development a real hassle.
 
-<img src="http://weknowmemes.com/wp-content/uploads/2012/07/testing-webpages-on-different-browsers.jpg" width="300px"/>
+<img src="http://weknowmemes.com/wp-content/uploads/2012/07/testing-webpages-on-different-browsers.jpg" width="550px"/>
 
 
 The lazy mans reset
@@ -191,7 +191,7 @@ Play with frogs [here](http://flexboxfroggy.com/)
 
 While flexbox is used to create fluid designs which work well if responsiveness is key, an alternative to flowing content across boxes is to align it to a fixed grid - and maybe not need media queries anymore?
 
-<img src="https://daverupert.com/images/posts/2017/css-grid.jpg" width="300px" />
+<img src="https://daverupert.com/images/posts/2017/css-grid.jpg" width="400px" />
 
 Nice way to compare the two is by reading [this complete guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [this complete guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
