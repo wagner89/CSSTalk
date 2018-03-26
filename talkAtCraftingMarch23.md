@@ -7,7 +7,7 @@
 
 Browsers are different and opinionated, and this makes front end development a real hassle.
 
-![browsers meme](http://weknowmemes.com/wp-content/uploads/2012/07/testing-webpages-on-different-browsers.jpg)
+<img src="http://weknowmemes.com/wp-content/uploads/2012/07/testing-webpages-on-different-browsers.jpg" width="300px"/>
 
 
 The lazy mans reset
@@ -191,7 +191,7 @@ Play with frogs [here](http://flexboxfroggy.com/)
 
 While flexbox is used to create fluid designs which work well if responsiveness is key, an alternative to flowing content across boxes is to align it to a fixed grid - and maybe not need media queries anymore?
 
-![](https://daverupert.com/images/posts/2017/css-grid.jpg)
+<img src="https://daverupert.com/images/posts/2017/css-grid.jpg" width="300px" />
 
 Nice way to compare the two is by reading [this complete guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [this complete guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
@@ -339,6 +339,14 @@ How we use it already: `dialogHeader` in Approval/Decline Dialogs
 ### You can't ever learn CSS, you can at most get used to it
 What other environment would provide you with 6 different kinds of values for any property:
 `initial`, `computed`, `resolved`, `specified`, `used`, and `actual`
+
+### Misc. useful links
+- [CSS selector specificity calculator](https://specificity.keegan.st/)
+- [CSS color picker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool)
+- [Color palette designer](http://paletton.com/)
+- [Visual editor to generate CSS](http://enjoycss.com)
+- [Online CSS minifier](https://cssminifier.com/)
+- 
 
 ### Sources
 - _[the MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)_
