@@ -1,7 +1,27 @@
-# Stuff I should've known before writing production CSS 
+# Stuff I probably should've known before writing production CSS 
 ![Peter Griffin here](https://i.giphy.com/media/yYSSBtDgbbRzq/giphy.webp)
 
-### Vanilla CSS topics
+## Table of contents
+
+1. Vanilla CSS topics (no pre-processor involved)
+  0. Reseting and normalization
+  1. Specificity
+  2. Stacking contexts
+  3. Units of measurment (px, em, rem)
+  4. Overflow vs. Z-index
+  5. The box model
+  6. Margin collapsing
+  7. Flexbox and CSS Grid
+  
+2. CSS, SASS, SCSS
+  0. Math
+  1. Declaring variables (actually, more like constants) 
+  2. Partial style sheet files
+  3. Nesting
+  4. Mixins
+  5. Inheritance
+
+### Vanilla CSS topics (no pre-processor involved)
 
 #### 0. Reseting and normalization
 
