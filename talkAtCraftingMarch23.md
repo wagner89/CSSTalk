@@ -203,7 +203,7 @@ Nice way to compare the two is by reading [this complete guide](https://css-tric
   - codewise: CSS3 < SASS === SCSS with more CSS like syntax
 
 #### 0. Math
-![](http://www.sassshop.com/images/math.jpg | width=300px)
+<img src="http://www.sassshop.com/images/math.jpg" width="300">
 
 ```
 width: (120em/16) * 50%
