@@ -340,13 +340,12 @@ How we use it already: `dialogHeader` in Approval/Decline Dialogs
 What other environment would provide you with 6 different kinds of values for any property:
 `initial`, `computed`, `resolved`, `specified`, `used`, and `actual`
 
-### Misc. useful links
+### Miscellaneous useful links
 - [CSS selector specificity calculator](https://specificity.keegan.st/)
 - [CSS color picker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool)
 - [Color palette designer](http://paletton.com/)
 - [Visual editor to generate CSS](http://enjoycss.com)
 - [Online CSS minifier](https://cssminifier.com/)
-- 
 
 ### Sources
 - _[the MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)_
