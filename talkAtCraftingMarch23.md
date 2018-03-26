@@ -3,7 +3,7 @@
 
 ## Table of contents
 
-1. Vanilla CSS topics (no pre-processor involved)
+- Vanilla CSS topics (no pre-processor involved)
   0. Reseting and normalization
   1. Specificity
   2. Stacking contexts
@@ -13,7 +13,7 @@
   6. Margin collapsing
   7. Flexbox and CSS Grid
   
-2. CSS, SASS, SCSS
+- CSS, SASS, SCSS
   0. Math
   1. Declaring variables (actually, more like constants) 
   2. Partial style sheet files
